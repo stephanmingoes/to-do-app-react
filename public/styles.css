@@ -1,76 +1,81 @@
-*{
-    margin: 0px;
-   padding: 0px;
-   box-sizing: border-box; 
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
-body{
-    margin: 1rem;
-    background-color: #eceff0;
-    font-family: Arial, Helvetica, sans-serif;
+body {
+  margin: 1rem;
+  background-color: #eceff0;
 }
-li{
-    
-    font-family: 'Architects Daughter', cursive;
-    display: inline-block;
-    line-height: 2rem;
-    list-style-type: none;
+h1 {
+  border-radius: 8px 8px 0px 0px;
+  background-color: #7952b3;
+  color: white;
+  display: block;
+  font-family: "Permanent Marker", cursive;
+  font-size: 2.5rem;
+  padding: 1.2rem;
 }
-input[type=checkbox]{
-    transform: scale(1.5);
-    margin-right: 1.5rem;
+li {
+  font-family: "Architects Daughter", cursive;
+  display: inline-block;
+  line-height: 2.5rem;
+  list-style-type: none;
+}
+input[type="checkbox"] {
+  margin-right: 1.5rem;
 }
 input:checked + li {
-    text-decoration: line-through;
-  }
-.container{
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.3);
-    margin: 10% auto;
-    text-align: center;
-    max-width: 500px;
-    min-height: 500px;
+  text-decoration: line-through;
 }
-.heading{
-    border-radius: 8px 8px 0px 0px;
-    background-color: #7952B3;
-    color: white;
-    display: block;
-    font-family: 'Permanent Marker', cursive;
-    font-size: 2.5rem;
-    padding: 1.2rem;
-}
-.form{
-    
-}
-.task_input{
-    margin-top: 2.4rem;
-    border: none;
-    border-bottom: 1.5px solid #FFC107;
-    padding: 0.6rem;
-    margin-right: 1.5rem;
-    text-align: center;
-    width: 70%;
-    
+.container {
+  position: relative;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+  margin: 10% auto;
+  text-align: center;
+  max-width: 500px;
+  min-height: 500px;
 }
 
-.task_input:focus{
-    border-bottom: 3px solid #FFC107;
-    outline: none;
+
+.task_input {
+  border: none;
+  border-bottom: 1.5px solid #ffc107;
+  padding: 0.6rem;
+
+  margin: 2.4rem 1.5rem 1rem 0px;
+  text-align: center;
+  width: 70%;
 }
 
-.form button{
-    background-color: #eceff0;
-    border: 0px;
-    border-radius: 4rem;
-    color: #7952B3;
-    font-size: 1.2rem;
-    padding: 1rem;
-    
+.task_input:focus {
+  border-bottom: 3px solid #ffc107;
+  outline: none;
 }
 
-.task{
-    margin-top: 1rem;
-    padding: 0px 40px 40px;
-    text-align: left;
+.submit {
+  background-color: #eceff0;
+  border: none;
+  border-radius: 4rem;
+  color: #7952b3;
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
+.tasks {
+  padding: 0px 40px 80px;
+  margin-bottom: 6rem;
+  text-align: left;
+}
+
+.delete {
+  background: transparent;
+  border: none;
+  bottom: 20px;
+  color: #7952b3;
+  font-size: 2.5rem;
+  position: absolute;
+  right: 45%;
 }
