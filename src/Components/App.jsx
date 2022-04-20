@@ -34,23 +34,27 @@ function App() {
       alert("This Item is already present in list");
     } else {
       setItems((preval) => [...preval, newTask]);
-      const data = JSON.parse(localStorage.getItem("data"));
-      data.push(newTask);
+      let data = JSON.parse(localStorage.getItem("data"));
+      if (!data) {
+        data = [];
+        data.push(newTask);
+      } else {
+        data.push(newTask);
+      }
+
       localStorage.setItem("data", JSON.stringify(data));
     }
   }
 
   // Toggle true and false
   const handleToggle = (event) => {
-    console.log(event.target);
-    console.log(items);
     let mapped = items.map((task) =>
       task.name === event.target.name
         ? { ...task, completed: !task.completed }
         : { ...task }
     );
     setItems(mapped);
-    console.log(mapped);
+
     localStorage.setItem("data", JSON.stringify(mapped));
   };
 
