@@ -17,7 +17,7 @@ h1 {
   padding: 1.2rem;
 }
 li {
-  font-family: "Architects Daughter", cursive;
+  font-family: "Architects Daughter", sans-serif;
   display: inline-block;
   line-height: 2.5rem;
   list-style-type: none;
@@ -38,7 +38,6 @@ input:checked + li {
   max-width: 500px;
   min-height: 500px;
 }
-
 
 .task_input {
   border: none;
